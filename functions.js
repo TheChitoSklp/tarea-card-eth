@@ -5,7 +5,7 @@ function generarTablaMultiplicar(numero, limite) {
   }
 }
 function esPrimo(numero) {
-  if (numero <= 1) return false; // 0 y 1 no son primos
+  if (numero <= 1) return false; 
   for (let i = 2; i < numero; i++) {
     if (numero % i === 0) return false;
   }
