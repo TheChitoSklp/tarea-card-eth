@@ -5,11 +5,11 @@ function generarTablaMultiplicar(numero, limite) {
   }
 }
 function esPrimo(numero) {
-  if (numero <= 1) return false; 
+  if (numero <= 1) return "no es primo";
   for (let i = 2; i < numero; i++) {
     if (numero % i === 0) return false;
   }
-  return true;
+  return "es primo";
 }
 function calcularFactorial(numero) {
   if (numero < 0) return "Error: No existe factorial de números negativos.";
