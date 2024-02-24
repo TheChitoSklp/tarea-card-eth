@@ -7,7 +7,7 @@ function generarTablaMultiplicar(numero, limite) {
 function esPrimo(numero) {
   if (numero <= 1) return "no es primo";
   for (let i = 2; i < numero; i++) {
-    if (numero % i === 0) return false;
+    if (numero % i === 0) return "no es primo";
   }
   return "es primo";
 }
