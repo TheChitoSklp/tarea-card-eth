@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--very-dark-blue-main-bg, #0d192c);
+  color: var(--Cyan, #00fff8);
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  width: 327px;
+  height: 543px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #15263f;
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .card-content,
+  .card-footer {
+    width: 278px;
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    p {
+      color: var(--Soft-Blue, #8bacd9);
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+  }
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #2e405a;
+    padding-bottom: 1rem;
+    .card-timer {
+      font-size: 15px;
+      color: var(--Soft-Blue, #8bacd9);
+    }
+    .card-timer,
+    .card-price {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+  }
+  .img-content {
+    width: 278px;
+    height: 278px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    position: relative;
+    img,
+    .glass {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+    }
+    .glass {
+      position: absolute;
+      opacity: 0.503;
+      background: var(--Cyan, #00fff8);
+      display: none;
+      z-index: 1;
+    }
+    .eye {
+      position: absolute;
+      display: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 48px;
+      height: 48px;
+      z-index: 2;
+    }
+  }
+  .img-content:hover .eye {
+    display: block;
+  }
+  .img-content:hover .glass {
+    display: block;
+  }
+
+  .creator {
+    margin-top: 1rem;
+    width: 278px;
+    display: flex;
+    align-items: center;
+    gap: 0 1rem;
+    color: white;
+    justify-content: flex-start;
+    img {
+      width: 33px;
+      height: 33px;
+      flex-shrink: 0;
+    }
+    .card-name {
+      color: var(--Cyan, #00fff8);
+    }
+  }
+}
